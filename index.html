@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" href="./img/man.png">
+    <title>Sami Mohammed</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="framework.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Start Container -->
+    <div class="container flex">
+      <!-- Start Sidebar -->
+      <div class="sidebar">
+        <div class="top">
+          <div class="logo"><a href="#" class="brand">Sami</a></div>
+        </div>
+        <ul class="links">
+          <a href="#home" class="active">
+            <span><i class="fas fa-home"></i></span>
+            <p  id="Home" class="Home">Home</p>
+          </a>
+          <a href="#about-me">
+            <span><i class="fas fa-address-card"></i></span>
+            <p  id="aboutLink">About</p>
+          </a>
+          <a href="#projects">
+            <span><i class="fas fa-list-ol"></i></span>
+            <p  id="projects">Projects</p>
+          </a>
+          <a  href="#contact">
+            <span><i class="fa-solid fa-comment"></i></span>
+            <p id="contactMe">Contact me</p>
+          </a>
+          <a  href="#">
+            <span id="Home"><i class="fas fa-sign-out-alt"></i></span>
+            <p id="logout">Logout</p>
+          </a>
+        </ul>
+      </div>
+      <!-- End Sidebar -->
+      <!-- Start main area -->
+      <div class="main-area" id="home">
+        <div class="head flex-between bg-white p-25 mb-15">
+          <i id="sun" class="fas fa-sun "></i>
+          <div class="change-clr">
+            <div class="parent-setting">
+              <div class="setting shadow" id="setting">
+                <i class="fa-solid fa-gear"></i>
+              </div>
+              <div class="setting shadow">
+                <i id="sun" class="fas fa-sun"></i>
+              </div>
+            </div>
+            <div class="public-setting rad-6 shadow">
+              <h3 class="text-center c-dark" id="changeLang">Change Language</h3>
+              <div class="lang flex-center">
+                <span class="rad-6 c-dark" onclick="changeLang('ar')" id="arabic">ar</span>
+                <span class="rad-6 c-dark" onclick="changeLang('en')" id="english">en</span>
+              </div>
+              <h3 class="text-center c-dark" id="ChooseClr">Choose Color</h3>
+             <div class="colors flex-center">
+               <span
+                style="background: #2a8dec"
+                onclick="color('#2a8dec')"
+              ></span>
+              <span
+                style="background: #bb2aec"
+                onclick="color('#bb2aec')"
+              ></span>
+              <span
+                style="background: #5fec2a"
+                onclick="color('#5fec2a')"
+              ></span>
+              <span
+                style="background: #f57a16"
+                onclick="color('#f57a16')"
+              ></span>
+              <span
+                style="background: #896b0b"
+                onclick="color('#896b0b')"
+              ></span>
+              <span
+                style="background: #ff0000"
+                onclick="color('#ff0000')"
+              ></span>
+              <span
+                style="background: #dd007a"
+                onclick="color('#dd007a')"
+              ></span>
+              <span
+                style="background: #129c8f"
+                onclick="color('#129c8f')"
+              ></span>
+             </div>
+            </div>
+          </div>
+        </div>
+        <div class="content" id="home">
+          <div class="social hide">
+            <a href="https://www.linkedin.com/in/sami-al-amwasy-378590249/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/412407512" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/Sami94356212" target="_blank"><i class="fab fa-twitter-square"></i></a>
+          </div>
+          <div class="info-me hide">
+            <h2 class="title" id="name">Hi, I'm Sami Moh</h2>
+            <p id="job">FullStack Developer</p>
+            <small id="aboutBrief" class="hide fs-15 block mb-25">
+              "Experienced web developer with a background in HTML, CSS,
+              Bootstrap, JavaScript, PHP, MySQL, and Laravel. Specializing in
+              building high-quality websites and web applications with
+              exceptional user experiences. Proficient in Laravel for scalable
+              solutions, HTML/CSS/Bootstrap for visually appealing designs, and
+              PHP/MySQL for complex back-end systems. Committed to staying
+              current with industry trends and delivering exceptional results."
+            </small>
+            
+            <a href="https://telegram.me/Programmer_Sami_Mohammed" target="_blank" id="MessageMe" class="btn-shape" style="color: #fff"
+              >Message Me &nbsp;<i class="fab fa-telegram-plane"></i
+            ></a>
+          </div>
+
+          <div class="img  hide">
+            <img src="./img/me.jpg" alt="My Photo" />
+          </div>
+        </div>
+		<!-- Start about me -->
+		<div class="about-me mb-15" id="about-me">
+			<h2 class="p-relative title p-15 c-dark fs-25 mb-15" id="aboutMe">About Me</h2>
+			<div class="content-about flex p-20 bg-white">
+				<div class="info hide">
+					<h3 class="c-dark fs-14 fw-400 mb-15 c-dark" class="" id="Brief" >Brief about me</h3>
+					<p id="BriefAboutMe" class="fs-15 c-grey">
+						Experienced web developer with a background in HTML, CSS,
+						Bootstrap, JavaScript, PHP, MySQL, and Laravel. Specializing in
+						building high-quality websites and web applications with
+						exceptional user experiences. Proficient in Laravel for scalable
+						solutions, HTML/CSS/Bootstrap for visually appealing designs, and
+						PHP/MySQL for complex back-end systems. Committed to staying
+						current with industry trends and delivering exceptional results.
+					</p>
+				</div>
+				<div class="skills">
+					<h2 class="c-dark mb-15 text-center hide" id="MySkills">My Skills</h2>
+					<div class="content-skills flex gap-1rem">
+					<div>
+						<h3 class="mb-15 c-dark hide"  id="front">Front End :</h3>
+			         	<div class="icons flex gap-1rem hide">
+						<i class="fab fa-html5"></i>
+						<i class="fab fa-css3-alt"></i>
+						<i class="fab fa-bootstrap"></i>
+						<i class="fab fa-js-square"></i>
+						<i class="fab fa-vuejs"></i>
+						</div>
+					</div>
+					<div>
+						<h3 class="mb-15 c-dark hide" id="back">Back End :</h3>
+						<div class="icons flex gap-1rem hide">
+							<i class="fab fa-php"></i>
+							<i class="fas fa-database"></i>
+							<i class="fab fa-laravel"></i>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End about me -->
+
+		<!-- Start Projects -->
+        <div class="projects  about-me" id="projects">
+			<h2 class="title fs-25 p-relative p-15 c-dark mb-15" id="LastProjects">Last Projects</h2>
+             <div class="content-projects p-25 bg-white">
+				<div class="card hide p-relative bg-white  shadow">
+					<div class="img"><img src="./img/pro4.png" alt="project1"></div>
+					<div class="info bg-white p-relative flex-between">
+					  <h4 class="title-card c-dark">E-commerce &nbsp; <span id="idProducts">1</span> </h4>
+					  <div class="heart c-dark"><i  class="far fa-heart"></i> &nbsp;<span id="like"></span> </div>
+					</div>
+					<a class="visitWeb " href="http://e-ecomerce.42web.io/" target="_blank">visit &nbsp;<i class="fas fa-share-square"></i></a>
+				</div>
+				
+					<div class="card hide p-relative bg-white  shadow">
+					<div class="img"><img src="./img/pro1.png" alt="project2"></div>
+					<div class="info bg-white p-relative flex-between">
+					  <h4 class="title-card c-dark">Creative Agency &nbsp; <span id="idProducts">2</span> </h4>
+					  <div class="heart c-dark"><i  class="far fa-heart"></i> &nbsp;<span id="like"></span> </div>
+					</div>
+					<a class="visitWeb " href="http://gency.eb2a.com/">visit &nbsp;<i class="fas fa-share-square"></i></a>
+				</div>
+
+					<div class="card hide p-relative bg-white  shadow">
+					<div class="img"><img src="./img/pro3.png" alt="project3"></div>
+					<div class="info bg-white p-relative flex-between">
+					  <h4 class="title-card c-dark">News Now &nbsp; <span id="idProducts">3</span> </h4>
+					  <div class="heart c-dark"><i  class="far fa-heart"></i> &nbsp;<span id="like"></span> </div>
+					</div>
+					<a class="visitWeb " href="https://silver-froyo-406aca.netlify.app" target="_blank">visit &nbsp;<i class="fas fa-share-square"></i></a>
+				</div>
+	            <div class="card hide p-relative bg-white  shadow">
+					<div class="img"><img src="./img/pro2.png" alt="project4"></div>
+					<div class="info bg-white p-relative flex-between">
+					  <h4 class="title-card c-dark">Office websites &nbsp; <span id="idProducts">4</span> </h4>
+					  <div class="heart c-dark"><i  class="far fa-heart"></i> &nbsp;<span id="like"></span> </div>
+					</div>
+					<a class="visitWeb " href="https://admirable-horse-47e414.netlify.app/" target="_blank">visit &nbsp;<i class="fas fa-share-square"></i></a>
+				</div>
+					
+               <div class="card hide p-relative bg-white  shadow">
+					<div class="img"><img src="./img/pro5.png" alt="project5"></div>
+					<div class="info bg-white p-relative flex-between">
+					  <h4 class="title-card c-dark">Chat App &nbsp; <span id="idProducts">5</span> </h4>
+					  <div class="heart c-dark"><i  class="far fa-heart"></i> &nbsp;<span id="like"></span> </div>
+					</div>
+					<a class="visitWeb " href="http://chatme.eb2a.com/user.php" target="_blank">visit &nbsp;<i class="fas fa-share-square"></i></a>
+				</div>
+
+				   <div class="card hide p-relative bg-white  shadow">
+					<div class="img"><img src="./img/pro6.png" alt="project6"></div>
+					<div class="info bg-white p-relative flex-between">
+					  <h4 class="title-card c-dark">Simple Portfolio &nbsp; <span id="idProducts">6</span> </h4>
+					  <div class="heart c-dark"><i  class="far fa-heart"></i> &nbsp;<span id="like"></span> </div>
+					</div>
+					<a class="visitWeb " href="https://musical-madeleine-ffa16f.netlify.app" target="_blank">visit &nbsp;<i class="fas fa-share-square"></i></a>
+				</div>
+				
+			 </div>
+	    	</div>
+		<!-- Last Projects -->
+
+    <!-- Start Footer -->
+    <footer class="flex shadow p-relative" id="contact">
+      <div class="logo-footer-middle">
+        <img src="./img/footer-logo.png" alt="">
+      </div>
+       <div class="footer-social flex">
+        <a href="https://www.facebook.com/sami.alamwasy/" target="_blank" title="Facebook"><i class="fab fa-facebook-square"></i></a>
+        <div class="divider"></div>
+        <a href="https://twitter.com/Sami94356212" target="_blank" title="twitter"><i class="fab fa-twitter"></i></a>
+        <div class="divider red-hover"></div>
+        <a href="https://www.instagram.com/sami_ana.2003/" target="_blank" title="instagram"><i class="fab fa-instagram" ></i></a>
+        <div class="divider"></div>
+        <a href="mailto:soso.412407512@gmail.com" target="_blank" title="Gmail"><i class="fa-solid fa-m"></i></a>
+        <div class="divider"></div>
+        <a  href="https://wa.me/+970595587514" target="_blank" title="Whatsapp"><i class="fab fa-whatsapp"></i></a>
+       </div>
+       <div class="footer-bottom flex-between">
+        <div>
+          <a href="#home" id="HomeFooter">Home</a>
+          <a href="#about-me" id="aboutLinkFooter">About</a>
+          <a href="#projects" id="projectsFooter">Projects</a>
+        </div>
+        <div class="footer-logo none-mobile">
+          <img src="img/footer-logo2.png" alt="">
+        </div>
+          <div>
+          <a href="#home" id="developed">Developed by ❤️Sami Moh ❤️</a>
+          <!-- <a href="#home">About</a> -->
+
+        </div>
+
+       </div>
+    </footer>
+    <!-- End Footer -->
+
+      </div>
+      <!-- End main area -->
+    </div>
+    <!-- End Container -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q9YKMXC58D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Q9YKMXC58D');
+</script>
+    <script src="script.js" defer></script>
+    <script src="lang.js" defer></script>
+  </body>
+</html>

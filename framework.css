@@ -1,0 +1,153 @@
+:root{
+	--main-clr:#f57a16;
+	--light-clr:#f1f5f9;
+	--white-clr:#fff;
+	--dark-clr:#222;
+	--grey-clr:#aaa;
+	
+	--fs-25:25px;
+	--fs-20:20px;
+	--fs-15:15px;
+	--fs-14:14px;
+	--fs-13:13px;
+}
+/* Component */
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-shape{
+    border-radius: 6px;
+    padding: 8px 25px;
+}
+.shadow{
+    box-shadow: 0 0 5px var(--grey-clr);
+}
+/* End Component */
+
+/* Start box */
+.flex{
+    display: flex;
+}
+.gap-1rem{
+    gap: 1rem;
+}
+.grid{
+    display: grid;
+}
+.block{
+    display: block;
+}
+@media(max-width:527px){
+    .block-mobile{
+        display: block;
+    }
+    .none-mobile{
+        display: none;
+}
+}
+/* related of language */
+ .parent-setting.setting-clrs{
+        margin-right: 180px;
+    }
+@media (max-width:767px){
+    .parent-setting.setting-clrs{
+        margin-right: 80px ;
+    }
+}
+/*  */
+/* End box */
+
+/* Padding & Margin */
+.mb-10{
+    margin-bottom: 10px;
+}
+.mb-15{
+    margin-bottom: 15px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.mb-25{
+    margin-bottom: 25px;
+}
+.p-15{
+    
+    padding: 15px;
+}
+.p-20{
+    padding: 20px;
+}
+.p-25{
+    padding: 25px;
+}
+/* Padding */
+
+/* Colors */
+.bg-white{
+    background-color: var(--white-clr);
+}
+.c-dark{
+    color: var(--dark-clr);
+}
+.c-grey{
+    color: var(--grey-clr);
+}
+/* Colors */
+
+/* Fonts */
+.fs-13{
+    font-size: 13px;
+}
+.fs-14{
+    font-size: 14px;
+}
+.fs-15{
+    font-size: 15px;
+}
+.fs-25{
+    font-size: 25px;
+}
+.fw-400{
+    font-weight: 400;
+}
+.text-center{
+    text-align: center;
+}
+/* Fonts */
+
+/* Borders */
+.rad-6{
+    border-radius: 6px;
+}
+/* Borders */
+/* Animation */
+.hide{
+  opacity: 0;
+  transform: translateY(-30px);
+  transition:all 1s ease-in-out;
+}
+.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Animation */
+
+
+/* Position */
+.p-relative{
+    position: relative;
+}
+/* Position */
+
+/* Hover */
+.transition{
+    transition: all 300ms ease;
+}
+/* Hover */
