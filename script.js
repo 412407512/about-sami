@@ -10,12 +10,12 @@ btnSetting.addEventListener("click", () => {
   hideColors.classList.toggle("hideColors");
 });
 window.onload = () => {
+  console.log(document.body.style=`overflow-y:hidden`)   
+  
   window.onscroll = () => {
     hideColors.classList.add("hideColors");
   };
   hideColors.classList.add("hideColors");
-
-  
 };
 
 // Change colors

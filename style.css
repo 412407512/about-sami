@@ -55,6 +55,25 @@ img {
   color: var(--dark-clr);
   background-color: var(--main-clr);
 }
+.loading-website{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 9999;
+  text-align: center;
+  color: white;
+  align-items: center;
+  transition: 300ms ease;
+  visibility: visible;
+  opacity: 1;
+}
+.loading-website p{
+    line-height: 500px;
+}
 .container {
   /* grid-template-columns: 200px 1fr; */
 }
