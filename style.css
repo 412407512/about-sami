@@ -37,8 +37,10 @@ body {
   font: 14px Arial, Helvetica, sans-serif;
   font-family:'Cairo';
   background-color: var(--light-clr);
-  overflow-y: hidden;
   position: relative;
+}
+body.overflow{
+  overflow-y: hidden;
 }
 ::-webkit-scrollbar {
   width: 7px;
